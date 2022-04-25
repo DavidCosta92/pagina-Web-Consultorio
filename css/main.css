@@ -43,10 +43,13 @@ body{
     cursor: pointer;
     margin-right: 2px;
 }
-.contenedorSliderEspecialidades .indicadores button:hover,
-.contenedorSliderEspecialidades .indicadores button:activo{
-    background-color: rgba(0, 0, 0, 0.7);
+.contenedorSliderEspecialidades .indicadores button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
 }
+.contenedorSliderEspecialidades .indicadores button.activo{
+    background-color:blue;
+}
+
 
 .contenedorEsp{
     display: flex;
@@ -76,11 +79,31 @@ body{
 .contenedorEsp .flechaDerecha{
     right: 0;
 }
-.contenedorSliderEsp{
+.contenedorEsp .contenedorSliderEsp{
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     overflow: hidden;
     scroll-behavior: smooth;
+}
+.contenedorEsp .contenedorSliderEsp .slider{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.contenedorEsp .contenedorSliderEsp .slider .especialidad{
+    min-width: 49%;
+    transition: .3s ease all;
+    box-shadow: 5 px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+.contenedorEsp .contenedorSliderEsp .slider .especialidad.hover{
+    transform: escale(1.1);
+    transform-origin: center;
+}
+.contenedorEsp .contenedorSliderEsp .slider .especialidad img{
+    width: 100%;
+    max-width: 400px;
+    vertical-align: top;
+    height: auto;
 }
 
 
@@ -106,4 +129,33 @@ body{
 #footer{
     grid-area: footer;
     background-color: coral;
+}
+
+
+/* MEDIA QUERIES 800 PX */
+@media (min-width: 800px){
+    .contenedorEsp .contenedorSliderEsp{
+        overflow: visible;
+        display: flex;
+    }
+    .contenedorEsp .contenedorSliderEsp .slider{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contenedorEsp .contenedorSliderEsp .slider .especialidad{
+        min-width: 30%;
+    }
+    .contenedorEsp .flechaIzquierda,
+    .contenedorEsp .flechaDerecha,
+    .contenedorSliderEspecialidades .indicadores {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .contenedorEsp .contenedorSliderEsp .slider .especialidad{
+        min-width: 23%;
+    }
+
 }
