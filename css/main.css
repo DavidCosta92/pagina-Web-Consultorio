@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+root{
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-areas: "nav" "sliderFotos" "sliderEspecialidades"
+	 "mision" "staff" "contacto" "footer";	
+}
+
+#nav{
+    grid-area: nav;
+    background-color: red;
+}
+#nav img{
+    max-width: 70px;
+}
+
+#sliderFotos{
+    grid-area:sliderFotos;
+    background-color: aqua;
+}
+
+#sliderEspecialidades{
+    grid-area: sliderEspecialidades;
+}
+
+.contenedorTitulo{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorSliderEspecialidades .indicadores button{
+    height: 3px;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.contenedorSliderEspecialidades .indicadores button:hover,
+.contenedorSliderEspecialidades .indicadores button:activo{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenedorEsp{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contenedorEsp .flechaIzquierda, .contenedorEsp .flechaDerecha{
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.contenedorEsp .flechaIzquierda:hover, .contenedorEsp .flechaDerecha:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.contenedorEsp .flechaIzquierda{
+    left: 0;
+}
+.contenedorEsp .flechaDerecha{
+    right: 0;
+}
+.contenedorSliderEsp{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+#mision{
+    grid-area: mision;
+    background-color: blueviolet;
+}
+
+#staff{
+    grid-area: staff;
+    background-color: chartreuse;
+}
+
+#contacto{
+    grid-area: contacto;
+    background-color: brown;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: coral;
+}

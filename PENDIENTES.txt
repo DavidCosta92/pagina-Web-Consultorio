@@ -1,0 +1,5 @@
+Buscar logo
+poner metas en head
+
+Navbar:
+-Linkear nav con lin
