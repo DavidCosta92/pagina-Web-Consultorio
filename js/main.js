@@ -46,3 +46,15 @@ for ( let i = 0; i< numeroDePaginas; i++){
         e.target.classList.add('activo');
     })
 }
+
+window.onscroll = function(){
+		
+    var position = window.pageYOffset || document.documentElement.scrollTop;
+            
+    var elementoAMover = document.getElementById('elementoAMover');
+            
+    let cantidadDeMovimiento = position * 0.2 ;
+    elementoAMover.style.top = 150-cantidadDeMovimiento + 'px';
+    }
+    
+    

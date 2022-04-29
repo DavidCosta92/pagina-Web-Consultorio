@@ -16,7 +16,6 @@ body{
 
 #nav{
     grid-area: nav;
-    background-color: red;
 }
 #nav img{
     max-width: 70px;
@@ -24,16 +23,23 @@ body{
 
 #sliderFotos{
     grid-area:sliderFotos;
-    background-color: aqua;
 }
 
 #sliderEspecialidades{
     grid-area: sliderEspecialidades;
+    background-color: rgb(248, 248, 248);
 }
 
-.contenedorTitulo{
-    display: flex;
-    justify-content: space-between;
+.contenedorTitulo h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: royalblue;
+}
+.contenedorTitulo .indicadores{
+    text-align: right;
+    
 }
 .contenedorSliderEspecialidades .indicadores button{
     height: 3px;
@@ -47,7 +53,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .contenedorSliderEspecialidades .indicadores button.activo{
-    background-color:blue;
+    background-color:royalblue;
 }
 
 
@@ -71,7 +77,7 @@ body{
     transition: .2s ease all;
 }
 .contenedorEsp .flechaIzquierda:hover, .contenedorEsp .flechaDerecha:hover{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .contenedorEsp .flechaIzquierda{
     left: 0;
@@ -90,10 +96,9 @@ body{
     flex-wrap: nowrap;
 }
 .contenedorEsp .contenedorSliderEsp .slider .especialidad{
-    min-width: 49%;
+    min-width: 45%;
+    margin: 10px;
     transition: .3s ease all;
-    box-shadow: 5 px 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 10px;
 }
 .contenedorEsp .contenedorSliderEsp .slider .especialidad.hover{
     transform: escale(1.1);
@@ -101,9 +106,23 @@ body{
 }
 .contenedorEsp .contenedorSliderEsp .slider .especialidad img{
     width: 100%;
-    max-width: 400px;
     vertical-align: top;
-    height: auto;
+    box-shadow: 4px -4px 10px 3px rgba(0, 0, 0, 0.1);   
+    border-bottom-style: solid;
+}
+.contenedorEsp .contenedorSliderEsp .slider .especialidad a{
+    text-decoration: none;
+    
+}
+.contenedorEsp .contenedorSliderEsp .slider .especialidad .tituloEspecialidad{
+    background-color:rgba(0, 0, 0, 0.1);
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: royalblue;
+    font-weight: 900;
+    box-shadow: 4px -4px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -113,8 +132,53 @@ body{
 
 #mision{
     grid-area: mision;
-    background-color: blueviolet;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
 }
+#mision .contenedorMision{
+    width: 60%;
+    padding: 2%;
+    
+}
+#mision .tituloMision{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+}
+
+#fotoEquipoSaludMision{
+    width: 40%;
+    overflow: hidden;
+}
+#fotoEquipoSaludMision img{
+    margin-top: 0;
+    position: relative;
+    height: 150%;
+    
+}
+
+
+
+
+
+#mision .subtituloMision{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+#mision .pMision{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
 
 #staff{
     grid-area: staff;
