@@ -54,7 +54,19 @@ window.onscroll = function(){
     var elementoAMover = document.getElementById('elementoAMover');
             
     let cantidadDeMovimiento = position * 0.2 ;
-    elementoAMover.style.top = 150-cantidadDeMovimiento + 'px';
+    elementoAMover.style.top = 80-cantidadDeMovimiento + 'px';
     }
     
+
+
+/* antes y despues */
+divisor = document.getElementById("divisor");
+slider = document.getElementById("slider");
+function moveDivisor() { divisor.style.width = slider.value+"%"; } 
+
+//reset after page load
+window.onload = function() {
+moveDivisor();
+};    
+/* termina antes y despues */
     

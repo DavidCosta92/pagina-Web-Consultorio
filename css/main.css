@@ -11,7 +11,7 @@ body{
 	grid-template-columns:1fr;
 	grid-template-rows: auto auto auto auto auto auto auto;
 	grid-template-areas: "nav" "sliderFotos" "sliderEspecialidades"
-	 "mision" "staff" "contacto" "footer";	
+	 "mision" "staff" "contacto";	
 }
 
 #nav{
@@ -23,6 +23,11 @@ body{
 
 #sliderFotos{
     grid-area:sliderFotos;
+}
+
+#sliderFotos .carousel-inner img {
+    max-height: 50vh;
+    background-size: cover;
 }
 
 #sliderEspecialidades{
@@ -138,7 +143,7 @@ body{
     overflow-y: hidden;
 }
 #mision .contenedorMision{
-    width: 60%;
+    width: 50%;
     padding: 2%;
     
 }
@@ -152,13 +157,13 @@ body{
 }
 
 #fotoEquipoSaludMision{
-    width: 40%;
+    width: 50%;
     overflow: hidden;
 }
 #fotoEquipoSaludMision img{
     margin-top: 0;
     position: relative;
-    height: 150%;
+    height: 160%;
     
 }
 
@@ -187,13 +192,119 @@ body{
 
 #contacto{
     grid-area: contacto;
-    background-color: brown;
+    background-image: url(../img/fondo-form-contacto.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+#contacto #form{
+    width: 40%;
+}
+#contacto .formulario{
+  background-color: rgba(31, 31, 31, 0.3);
+  width: 100%;
+
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+#contacto .formHeader {
+    width: 100%;
+    background-color: rgba(65, 105, 225, 0.6);
+    color: white; 
+}
+.formHeader span {
+    display: block;
+    text-align: center;
+    padding: 0.8em; 
+}
+.formHeader span i{
+    font-size: 2em;
+    font-weight: 600;
+}
+.form {
+    padding: 1em;
+    font-size: 0.8em; 
+}
+.form label {
+    width: 80%;
+    font-weight: 400; 
+    font-size: 1em;
+    color: white;
 }
 
-#footer{
-    grid-area: footer;
-    background-color: coral;
+.form input:not([type="submit"]), .form .form textarea {
+    border: none;
+    border-bottom: 2px solid royalblue;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    outline: none;
+    color: royalblue;
+    font-weight: 500;
 }
+.form textarea{
+    color: royalblue;
+    font-size: 1.3em;
+    border-bottom: 2px solid royalblue;
+    min-height: 70px;
+    font-weight: 500;
+}
+.form textarea:focus{
+   outline: 0 none;
+}
+.form label, .form input, .form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ .botonEnvio {
+    border: none;
+    padding: 10px;
+    width: 30%;
+    color: white;
+    background-color: rgba(65, 105, 225, 0.6);
+    cursor: pointer; 
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.botonEnvio:hover {
+      
+      background-color: rgba(65, 105, 225, 1);
+}
+
+
+.informacion{
+    width: 40%;
+    background-color: rgba(65, 105, 225, 0.6);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.informacion .info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    align-items: center;
+}
+.informacion .info img{
+    max-height: 45px;
+}
+.informacion .info .texto{
+    padding-left: 10px;
+    color: white;
+}
+.informacion .info .texto .titulo{
+    font-size: 1.6em;
+    font-weight: 700;
+
+}
+.informacion .info .texto .subtitulo{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
 
 
 /* MEDIA QUERIES 800 PX */
@@ -214,8 +325,175 @@ body{
     .contenedorSliderEspecialidades .indicadores {
         display: none;
     }
+}
+
+/*  ESPECIALIDADES   */
+
+/* Odonto */
+.tituloPagina{
+    text-align: center;
+    font-weight: 900;
+    color: royalblue;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+}
+.odontologia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;  
+}
+
+.odontologia .profesional{
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.odontologia .profesional .textoProfesional{
+    color: white;
+    width: 60%;
     
 }
+.profesional .textoProfesional .tituloProfesional{
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 15px;   
+}
+.textoProfesional .tituloProfesional p{
+    margin-bottom: 0;
+}
+.profesional .textoProfesional .subtituloProfesional{
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-left: 20px;
+    line-height: 1;
+    
+}
+.profesional .textoProfesional .descripcionProfesional{
+    font-size: 1em;
+    padding-left: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.profesional .fotoProfesional img{
+    height: 40vh;
+    
+}
+
+.odontologia .slider{
+    width: 50%;
+    background-color: royalblue;
+}
+.odontologia .slider .carousel-inner img{
+    max-height: 60vh;
+}
+.odontologia .informacionOdontologia{
+    width: 50%;
+    background-color: white;
+    justify-content: center;
+}
+.informacionOdontologia .accordion-button{
+    font-weight: 600;
+}
+.informacionOdontologia .accordion p{
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.odontologia .casosExito{
+    padding: 50px;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.odontologia .textoCasos{
+    width: 50%;
+    color: white;
+}
+.odontologia .tituloCasos{
+    font-size: 3em;
+    font-weight: 500;
+}
+.odontologia .subtituloCasos{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* CASOS B */
+.odontologia .casosExitoB{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.odontologia .textoCasosB{
+    width: 50%;
+    color: royalblue;
+    padding: 20px;
+}
+.odontologia .seccion1OrtodonciaInvisible{
+    width: 100%;
+}
+
+
+.odontologia .fotoOrtodonciaInvisible1{
+    width: 100%;
+    background-size: cover;
+}
+.odontologia .tituloCasosB{
+    font-size: 3em;
+    font-weight: 500;
+}
+.odontologia .subtituloCasosB{
+    font-size: 2em;
+    font-weight: 300;
+    color: royalblue;
+}
+
+.odontologia .subtituloCasosB2Padre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: royalblue;
+}
+.subtituloCasosB2Padre .subtituloCasosB{
+    width: 100%;
+    font-weight: 500;
+    font-size: 2.8em;
+    text-align: center;
+    color: white;
+}
+.galeriaOrtodonciaInvisible2 {
+    width: 50%;
+    background-color: royalblue;
+}
+.galeriaOrtodonciaInvisible2 .fotoOrtodonciaInvisible {
+    display: flex;
+    justify-content: end;
+}
+.galeriaOrtodonciaInvisible2 img {
+    width: 50%;
+    background-size: cover;
+    margin-right: 0;
+}
+
+
+/* CASOS B*/
+
+
+
+
+
+
 
 @media (min-width: 1200px){
     .contenedorEsp .contenedorSliderEsp .slider .especialidad{
@@ -223,3 +501,72 @@ body{
     }
 
 }
+
+
+
+
+/* Antes y despues  */
+/* holder */
+div #comparison {
+    width: 60vw; height: 60vw;
+    max-width: 250px; max-height: 250px;
+    overflow: hidden;
+    }
+    div #comparison figure {
+    background-image: url(../img/esp-odonto/antes-despues/antes.png);
+    background-size: cover; font-size: 0;
+    width: 100%; height: 100%; margin: 0;
+    position: relative;
+    }
+    div #comparison figure > img {
+    position: relative; width: 100%;
+    }
+    div#comparison figure div {
+    background-image: url(../img/esp-odonto/antes-despues/despues.png);
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+    overflow: hidden; bottom: 0; height: 100%;
+    } 
+    /* slider */
+    input[type=range]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    position: relative;
+    top: -2rem; left: -2%;
+    background-color: rgba(255,255,255,0.1);
+    width: 102%;
+    }
+    input[type=range]:focus { outline: none; }
+    input[type=range]:active { outline: none; }
+    input[type=range]::-moz-range-track {
+    -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+    outline: none;
+    }
+    input[type=range]::active {
+    border: none; outline: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 20px; height: 15px;
+    background: #fff;
+    border-radius: 0;
+    }
+    input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 20px; height: 15px; background: #fff;
+    border-radius: 0;
+    }
+    input[type=range]:focus::-webkit-slider-thumb {
+    background: rgba(255,255,255,0.5);
+    }
+    input[type=range]:focus::-moz-range-thumb {
+    background: rgba(255,255,255,0.5);
+    } 
+
+    /* termina antes y despues */
