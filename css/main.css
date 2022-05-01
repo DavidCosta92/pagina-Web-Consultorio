@@ -33,23 +33,25 @@ body{
 #sliderEspecialidades{
     grid-area: sliderEspecialidades;
     background-color: rgb(248, 248, 248);
+    width: 100vw;
+    
 }
 
 .contenedorTitulo h3 {
     text-align: center;
     margin-top: 30px;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: royalblue;
+    line-height: 0.7;
 }
 .contenedorTitulo .indicadores{
     text-align: right;
-    
 }
 .contenedorSliderEspecialidades .indicadores button{
     height: 3px;
     width: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(65, 105, 225, 0.384);
     border: none;
     cursor: pointer;
     margin-right: 2px;
@@ -61,7 +63,6 @@ body{
     background-color:royalblue;
 }
 
-
 .contenedorEsp{
     display: flex;
     align-items: center;
@@ -70,19 +71,19 @@ body{
 .contenedorEsp .flechaIzquierda, .contenedorEsp .flechaDerecha{
     position: absolute;
     border: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(65, 105, 225, 0.2);
     font-size: 40px;
     height: 50%;
-    top: calc(50% - 25%);
+    top: calc(50% - 30%);
     line-height: 40px;
-    width: 50px;
+    width: 20px;
     color: white;
     cursor: pointer;
     z-index: 500;
     transition: .2s ease all;
 }
 .contenedorEsp .flechaIzquierda:hover, .contenedorEsp .flechaDerecha:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(65, 105, 225, 0.5);
 }
 .contenedorEsp .flechaIzquierda{
     left: 0;
@@ -101,8 +102,8 @@ body{
     flex-wrap: nowrap;
 }
 .contenedorEsp .contenedorSliderEsp .slider .especialidad{
-    min-width: 45%;
-    margin: 10px;
+    min-width: 40%;
+    margin: 5%;
     transition: .3s ease all;
 }
 .contenedorEsp .contenedorSliderEsp .slider .especialidad.hover{
@@ -143,21 +144,22 @@ body{
     overflow-y: hidden;
 }
 #mision .contenedorMision{
-    width: 50%;
+    width: 100%;
     padding: 2%;
     
 }
 #mision .tituloMision{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
+    width: 100%;
 }
 
 #fotoEquipoSaludMision{
-    width: 50%;
+    width: 100%;
     overflow: hidden;
 }
 #fotoEquipoSaludMision img{
@@ -198,12 +200,13 @@ body{
     padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
     
 }
 #contacto #form{
-    width: 40%;
+    width: 85%;
+    padding-bottom: 60px;
 }
 #contacto .formulario{
   background-color: rgba(31, 31, 31, 0.3);
@@ -277,7 +280,7 @@ body{
 
 
 .informacion{
-    width: 40%;
+    width: 85%;
     background-color: rgba(65, 105, 225, 0.6);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
@@ -307,25 +310,7 @@ body{
 
 
 
-/* MEDIA QUERIES 800 PX */
-@media (min-width: 800px){
-    .contenedorEsp .contenedorSliderEsp{
-        overflow: visible;
-        display: flex;
-    }
-    .contenedorEsp .contenedorSliderEsp .slider{
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .contenedorEsp .contenedorSliderEsp .slider .especialidad{
-        min-width: 30%;
-    }
-    .contenedorEsp .flechaIzquierda,
-    .contenedorEsp .flechaDerecha,
-    .contenedorSliderEspecialidades .indicadores {
-        display: none;
-    }
-}
+
 
 /*  ESPECIALIDADES   */
 
@@ -570,3 +555,24 @@ div #comparison {
     } 
 
     /* termina antes y despues */
+
+
+    /* MEDIA QUERIES 800 PX */
+@media (min-width: 800px){
+    .contenedorEsp .contenedorSliderEsp{
+        overflow: visible;
+        display: flex;
+    }
+    .contenedorEsp .contenedorSliderEsp .slider{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contenedorEsp .contenedorSliderEsp .slider .especialidad{
+        min-width: 30%;
+    }
+    .contenedorEsp .flechaIzquierda,
+    .contenedorEsp .flechaDerecha,
+    .contenedorSliderEspecialidades .indicadores {
+        display: none;
+    }
+}
