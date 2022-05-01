@@ -288,7 +288,7 @@ body{
 .informacion .info{
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 10px;
     align-items: center;
 }
 .informacion .info img{
@@ -297,15 +297,18 @@ body{
 .informacion .info .texto{
     padding-left: 10px;
     color: white;
+    width: 75%;
 }
 .informacion .info .texto .titulo{
     font-size: 1.6em;
     font-weight: 700;
+    text-align: center;
 
 }
 .informacion .info .texto .subtitulo{
     font-size: 1.1em;
     font-weight: 500;
+    text-align: center;
 }
 
 
@@ -319,9 +322,8 @@ body{
     text-align: center;
     font-weight: 900;
     color: royalblue;
-    margin-top: 15px;
-    margin-bottom: 25px;
-
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .odontologia{
     display: flex;
@@ -335,16 +337,15 @@ body{
     flex-wrap: wrap;
     justify-content:space-between;
 }
-
 .odontologia .profesional .textoProfesional{
     color: white;
-    width: 60%;
+    width: 100%;
     
 }
 .profesional .textoProfesional .tituloProfesional{
     font-size: 2em;
     font-weight: 700;
-    padding-left: 15px;   
+    padding-left: 10px;   
 }
 .textoProfesional .tituloProfesional p{
     margin-bottom: 0;
@@ -352,32 +353,30 @@ body{
 .profesional .textoProfesional .subtituloProfesional{
     font-size: 1.4em;
     font-weight: 600;
-    padding-left: 20px;
+    padding-left: 15px;
     line-height: 1;
     
 }
 .profesional .textoProfesional .descripcionProfesional{
     font-size: 1em;
-    padding-left: 25px;
+    padding-left: 15px;
     font-weight: 400;
     text-align: center;
 }
 
-
 .profesional .fotoProfesional img{
-    height: 40vh;
-    
+    width: 100%;
 }
 
 .odontologia .slider{
-    width: 50%;
+    width: 100%;
     background-color: royalblue;
 }
 .odontologia .slider .carousel-inner img{
     max-height: 60vh;
 }
 .odontologia .informacionOdontologia{
-    width: 50%;
+    width: 100%;
     background-color: white;
     justify-content: center;
 }
@@ -391,7 +390,6 @@ body{
     padding-top: 10px;
 }
 .odontologia .casosExito{
-    padding: 50px;
     width: 100%;
     background-color: royalblue;
     display: flex;
@@ -399,16 +397,19 @@ body{
     justify-content: space-around;
 }
 .odontologia .textoCasos{
-    width: 50%;
+    width: 100%;
     color: white;
 }
 .odontologia .tituloCasos{
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
 }
 .odontologia .subtituloCasos{
-    font-size: 2em;
-    font-weight: 300;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
 }
 
 /* CASOS B */
@@ -420,34 +421,34 @@ body{
     justify-content: space-between;
 }
 .odontologia .textoCasosB{
-    width: 50%;
+    width: 100%;
     color: royalblue;
-    padding: 20px;
+    padding: 10px;
 }
 .odontologia .seccion1OrtodonciaInvisible{
     width: 100%;
 }
 
-
-.odontologia .fotoOrtodonciaInvisible1{
+.odontologia .fotoOrtodonciaInvisible1 img{
     width: 100%;
-    background-size: cover;
 }
 .odontologia .tituloCasosB{
-    font-size: 3em;
+    font-size: 1.7em;
     font-weight: 500;
+    text-align: center;
 }
 .odontologia .subtituloCasosB{
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 300;
     color: royalblue;
+    text-align: center;
 }
 
 .odontologia .subtituloCasosB2Padre{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     background-color: royalblue;
 }
 .subtituloCasosB2Padre .subtituloCasosB{
@@ -458,7 +459,7 @@ body{
     color: white;
 }
 .galeriaOrtodonciaInvisible2 {
-    width: 50%;
+    width: 100%;
     background-color: royalblue;
 }
 .galeriaOrtodonciaInvisible2 .fotoOrtodonciaInvisible {
@@ -466,7 +467,7 @@ body{
     justify-content: end;
 }
 .galeriaOrtodonciaInvisible2 img {
-    width: 50%;
+    width: 100%;
     background-size: cover;
     margin-right: 0;
 }
