@@ -31,34 +31,30 @@ body{
     display: flex;
     justify-content: center;
 }
+
 #flechaAtras{
     padding: 2px 3px 2px 3px;
     border: none;
-    background-color: rgba(65, 105, 225, 0.2);
+    background: transparent;
     justify-self: flex-start;
     cursor: pointer;
     border-radius: 8px;
+    width: 10%;
+    margin: 3px;
 }
 
+#flechaAtras:hover{
+    background-color: rgba(65, 105, 225, 0.1);
+    border: solid;
+    border-radius: 8px;
+    border-color: royalblue;
+
+    
+}
 
 #flechaAtras .flechaAtras{
     height: 30px;  
-
     z-index: 500;
-  
-
- /*
-    position: absolute;
-    
-    
-    height: 50%;
-    top: calc(50% - 30%);
-    line-height: 40px;
-    width: 20px;
-    color: white;
-    
-    transition: .2s ease all;
-    */
 }
 
 #sliderFotos{
@@ -162,7 +158,7 @@ body{
 }
 .contenedorEsp .contenedorSliderEsp .slider .especialidad .tituloEspecialidad{
     background-color:rgba(0, 0, 0, 0.1);
-    font-size: 1.25em;
+    font-size: 1em;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 3px;
@@ -362,6 +358,8 @@ body{
     color: royalblue;
     margin-top: 8px;
     margin-bottom: 8px;
+    margin-left: -35px;
+    width: 90%;
 }
 .odontologia{
     display: flex;
