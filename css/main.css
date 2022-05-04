@@ -33,23 +33,31 @@ body{
 }
 
 #flechaAtras{
-    padding: 8px;
+    padding: 1px;
     border: none;
-    background: red;
+    background: transparent;
     align-self: center;
     cursor: pointer;
     border-radius: 8px;
 }
+.flecha{
+    padding: 1px;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 500;
+}
 
-#flechaAtras:hover{
+.flecha:hover{
     background-color: rgba(65, 105, 225, 0.1);
     border: solid;
     border-radius: 8px;
     border-color: royalblue;    
 }
 
-#flechaAtras .flechaAtras{
-    height: 30px;  
+.flecha .flechaAtras{
+    height: 45px;  
     z-index: 500;
 }
 
