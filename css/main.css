@@ -50,7 +50,7 @@ body{
 }
 
 .flecha:hover{
-    background-color: rgba(65, 105, 225, 0.1);
+    background-color: rgba(65, 105, 225, 0.3);
     border: solid;
     border-radius: 8px;
     border-color: royalblue;    
