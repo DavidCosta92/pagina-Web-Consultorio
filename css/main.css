@@ -514,12 +514,6 @@ body{
 }
 /* CASOS B*/
 
-/* BOTON DE WS */
-#animacionBtnWs{
-    -webkit-animation-duration: 3s;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
 .turnos{
     display: flex;
     justify-content: space-around;
