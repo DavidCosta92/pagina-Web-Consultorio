@@ -53,7 +53,7 @@ window.onscroll = function(){
             
     var elementoAMover = document.getElementById('elementoAMover');
             
-    let cantidadDeMovimiento = position * 0.2 ;
+    let cantidadDeMovimiento = position * 0.15 ;
 
     elementoAMover.style.top = 80-cantidadDeMovimiento + 'px';
     }
@@ -71,11 +71,11 @@ moveDivisor();
 };    
 /* termina antes y despues */
     
-
+/*
 function myFunction() {
     const selector = document.getElementById("maaa");
     selector.classList.add('magictime', 'vanishIn');
 }
 setInterval(myFunction, 1000);
 
-
+*/

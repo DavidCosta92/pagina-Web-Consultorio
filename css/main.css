@@ -199,12 +199,13 @@ body{
 #fotoEquipoSaludMision{
     width: 100%;
     overflow: hidden;
+    max-width: 800px;
+    max-height: 50vh;
 }
 #fotoEquipoSaludMision img{
     margin-top: 0;
     position: relative;
-    height: 160%;
-    
+    height: 170%;   
 }
 
 
@@ -239,12 +240,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
-    
+    align-items: flex-end;    
 }
 #contacto #form{
     width: 85%;
     padding-bottom: 60px;
+    max-width: 450px;
 }
 #contacto .formulario{
   background-color: rgba(31, 31, 31, 0.3);
@@ -321,6 +322,7 @@ body{
     width: 85%;
     background-color: rgba(65, 105, 225, 0.6);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    max-width: 450px;
 }
 
 .informacion .info{
@@ -646,6 +648,17 @@ div #comparison {
 
     /* termina antes y despues */
 
+     /* MEDIA QUERIES 550 PX */
+
+     @media (min-width: 550px){
+
+        .contenedorEsp .contenedorSliderEsp .slider .especialidad {
+            margin:1%;
+            min-width: 30%;
+        }
+     }
+
+
 
     /* MEDIA QUERIES 800 PX */
 @media (min-width: 800px){
@@ -665,4 +678,29 @@ div #comparison {
     .contenedorSliderEspecialidades .indicadores {
         display: none;
     }
+
+    #contacto{
+        justify-content:space-around;
+    } 
+
+    #mision{
+        padding-bottom: 50px;
+    }
+
+    #mision #fotoEquipoSaludMision img{
+        height: 170%;
+    }
+    #mision #fotoEquipoSaludMision {
+        width: 70%;
+    }
+    #mision .contenedorMision {
+        width: 30%;
+        margin: auto;
+    }
+
+
+
+    
+       
+        
 }
