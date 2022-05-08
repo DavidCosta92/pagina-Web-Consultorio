@@ -57,7 +57,7 @@ body{
 }
 
 .flecha .flechaAtras{
-    height: 45px;  
+    height: 30px;  
     z-index: 500;
 }
 
@@ -524,7 +524,7 @@ body{
     border-color: rgb(41 167 26);
     border-width: 2px;
     border-radius: 10px;
-    margin: 15px 3px 15px 3px;
+    margin: 15px auto;
 }
 .turnos .horarios {
  margin:auto;   
@@ -558,7 +558,7 @@ body{
     background-color: rgb(41 167 26);
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: white;
     padding: 3px 5px;
     font-weight: 500;
@@ -572,12 +572,7 @@ body{
 
 
 
-@media (min-width: 1200px){
-    .contenedorEsp .contenedorSliderEsp .slider .especialidad{
-        min-width: 23%;
-    }
 
-}
 
 
 
@@ -648,16 +643,51 @@ div #comparison {
 
     /* termina antes y despues */
 
+    /* MEDIA QUERIES 350 PX */
+
+    @media (min-width: 350px){
+        .contenedorEsp .contenedorSliderEsp .slider .especialidad .tituloEspecialidad{
+            font-size: 1.1em;
+        }
+
+    }
+
+
      /* MEDIA QUERIES 550 PX */
 
      @media (min-width: 550px){
-
+        .contenedorEsp .contenedorSliderEsp .slider .especialidad .tituloEspecialidad{
+            font-size: 1.2em;
+        }
         .contenedorEsp .contenedorSliderEsp .slider .especialidad {
             margin:1%;
             min-width: 30%;
         }
+        .turnos{
+            width: 85%;
+        }
+        .turnos .horarios .tituloHorario{
+            font-size: 1.2em;
+        }
+        .botonWhatsApp{
+            margin: auto;
+        }
+        .botonWhatsApp .linkWs{
+            font-size: 1.5em;
+        }
      }
 
+     /* MEDIA QUERIES 650PX*/
+
+@media (min-width:650px) {
+    .turnos{
+        width: 70%;
+    }
+    .botonWhatsApp .linkWs{
+        font-size: 1.6em;
+    }
+    
+}
 
 
     /* MEDIA QUERIES 800 PX */
@@ -698,9 +728,38 @@ div #comparison {
         margin: auto;
     }
 
+    .contenedorEsp .contenedorSliderEsp .slider .especialidad .tituloEspecialidad{
+        font-size: 1.35em;
+    }
 
+    .turnos{
+        width: 60%;
+    }
+    .turnos .horarios .tituloHorario{
+        margin-bottom: 0;
+    }
+    .turnos .horarios .tituloHorario{
+        margin-bottom: 0;
+    }
+    .botonWhatsApp .linkWs{
+        font-size: 1.7em;
+    }    
+}
 
-    
-       
-        
+ /* MEDIA QUERIES 1000 PX */
+ @media (min-width: 1000px){
+    .turnos{
+        width: 50%;
+    }
+
+}
+    /* MEDIA QUERIES 1200 PX */
+@media (min-width: 1200px){
+    .contenedorEsp .contenedorSliderEsp .slider .especialidad{
+        min-width: 23%;
+    }
+    .turnos{
+        width: 40%;
+    }
+
 }
